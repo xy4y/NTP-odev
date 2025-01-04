@@ -40,6 +40,11 @@ void Oyun::oynat()
         haritaGuncelle(); // Haritayı günceller
         haritaGoster(); // Haritayı ekrana gösterir
 
+        // Polis ve hırsızın kalan dayanıklılığını ekrana yazdırıyoruz
+        std::cout << "\nPolis'in dayanikliligi: " << polis.getDayaniklilik() << std::endl;
+        std::cout << "Hirsiz'in dayanikliligi: " << hirsiz.getDayaniklilik() << std::endl;
+
+
         // Polis için seçenek sorar (kovala veya dinlen)
         std::cout << "\nPolis ne yapmak ister? (k - Kos / d - Dinlen): ";
         std::cin >> hareket;
@@ -57,6 +62,11 @@ void Oyun::oynat()
             hirsiz.kac();
         else if (hareket == 's') // Eğer hırsız "saklan" derse
             hirsiz.saklan();
+
+        // Polis ve hırsızın kalan dayanıklılığını ekrana yazdırıyoruz
+        std::cout << "\nPolis'in dayanikliligi: " << polis.getDayaniklilik() << std::endl;
+        std::cout << "Hirsiz'in dayanikliligi: " << hirsiz.getDayaniklilik() << std::endl;
+
 
         // Oyunun bitme durumunu kontrol eder
         if (polis.getDayaniklilik() <= 0 && hirsiz.getDayaniklilik() <= 0)
