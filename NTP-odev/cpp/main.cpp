@@ -3,5 +3,6 @@
 int main()
 {
     Oyun oyun;
+    oyun.oyunat();
     return 0;
 }
