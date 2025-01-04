@@ -1,8 +1,8 @@
 #include "Oyun.h"
-//oyun sınıfı oluşturuldu ve oyun başlatıldı
+// oyun sınıfı oluşturuldu ve oyun başlatıldı
 int main()
 {
     Oyun oyun;
-    oyun.oyunat();
+    oyun.oynat();
     return 0;
 }
