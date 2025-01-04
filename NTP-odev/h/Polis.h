@@ -10,7 +10,11 @@ private:
     int x, y;
 
 public:
-    
+    Polis();
+    void kovala();
+    void dinlen();
+    int getX() const;
+    int getY() const;
 };
 
 #endif

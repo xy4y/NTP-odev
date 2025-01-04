@@ -10,7 +10,11 @@ private:
     int x, y;
 
 public:
-    
+    Hirsiz();
+    void kac();
+    void saklan();
+    int getX() const;
+    int getY() const;
 };
 
 #endif

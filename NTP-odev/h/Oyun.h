@@ -12,7 +12,12 @@ private:
     char harita[10][10];
 
 public:
-    
+    Polis polis;
+    Hirsiz hirsiz;
+    char harita[10][10];
+
+    void haritaGuncelle();
+    void haritaGoster();
 };
 
 #endif
