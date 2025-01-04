@@ -4,20 +4,17 @@
 #include "Polis.h"
 #include "Hirsiz.h"
 
-class Oyun
-{
+class Oyun {
+public:
+    Oyun();              // الدالة البانية
+    void haritaGuncelle(); // تحديث الخريطة
+    void haritaGoster();   // عرض الخريطة
+    void oynat();          // تشغيل اللعبة
+
 private:
     Polis polis;
     Hirsiz hirsiz;
     char harita[10][10];
-
-public:
-    Polis polis;
-    Hirsiz hirsiz;
-    char harita[10][10];
-
-    void haritaGuncelle();
-    void haritaGoster();
 };
 
-#endif
+#endif // OYUN_H
