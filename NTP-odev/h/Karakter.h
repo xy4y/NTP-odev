@@ -11,7 +11,12 @@ protected:
     int dayaniklilik;
 
 public:
-    
+    Karakter(std::string i, int h, int d);
+    void setDayaniklilik(int d);
+    int getDayaniklilik() const;
+    void dayaniklilikAzalt(int miktar);
+    std::string getIsim() const;
+    bool yoruldumMu() const;
 };
 
 #endif
