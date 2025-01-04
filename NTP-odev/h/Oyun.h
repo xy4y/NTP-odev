@@ -5,16 +5,16 @@
 #include "Hirsiz.h"
 
 class Oyun {
-public:
-    Oyun();              // الدالة البانية
-    void haritaGuncelle(); // تحديث الخريطة
-    void haritaGoster();   // عرض الخريطة
-    void oynat();          // تشغيل اللعبة
-
 private:
     Polis polis;
     Hirsiz hirsiz;
     char harita[10][10];
+    void haritaGuncelle(); // تحديث الخريطة
+    void haritaGoster();   // عرض الخريطة
+public:
+    Oyun();              // الدالة البانية
+    void oynat();          // تشغيل اللعبة
+
 };
 
 #endif // OYUN_H
